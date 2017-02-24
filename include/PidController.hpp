@@ -11,6 +11,8 @@
 #define PID_CONTROLLER_H
 
 #include <iostream>
+#include <math.h>	// Library needed for isless() function
+#include <stdexcept>	// Library needed for exception handling
 
 class PidController{
 
