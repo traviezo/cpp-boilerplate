@@ -19,3 +19,6 @@ $ git clone --recursive https://github.com/Traviezo/cpp-boilerplate.git
 
 ### TODO:
  - Add more tests to verify edge conditions and parameter validation for PIDcontroller
+
+### UPDATE:
+ - Added tests for parameters validation in PidController constructor 
