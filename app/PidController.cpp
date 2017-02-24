@@ -1,7 +1,12 @@
 #include <PidController.hpp>
 
-
 PidController::PidController(double kp,double ki,double kd,double samplingTime){
+	if (isless(samplingTime,0))
+		throw std::domain_error("Negative time argument is invalid");
+	if (samplingTime == 0)
+		throw std::runtime_error("Argument will cause a divide by zero");
+	if (isless(kp,0) || isless(ki,0) || isless(kd,0))
+		throw std::domain_error("Negative arguments are invalid");
 	Kp = kp;
 	Ki = ki;
 	Kd = kd;
