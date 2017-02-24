@@ -17,3 +17,5 @@ Simple starter C++ project with:
 $ git clone --recursive https://github.com/Traviezo/cpp-boilerplate.git
 ```
 
+### TODO:
+ - Add more tests to verify edge conditions and parameter validation for PIDcontroller
