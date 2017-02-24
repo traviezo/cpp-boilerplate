@@ -44,6 +44,8 @@ class PidController{
 		double Ki;
 		double Kd;
 		double dt;
+		double previousError;
+		double integral;
 };
 
 #endif	// PID_CONTROLLER_H
